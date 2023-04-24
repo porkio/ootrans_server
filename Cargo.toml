@@ -1,0 +1,37 @@
+[package]
+name = "ootrans_server"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = {version = "0.5.0-rc.3", features = ["json"]}
+reqwest = { version = "0.11.16", features = ["json", "cookies"] }
+tokio = { version = "1", features = ["full"] }
+
+# 加密库
+rust-crypto = "0.2.36"
+
+# 日期时间库
+chrono = "0.4.24"
+
+# serde
+serde = "1.0.159"
+serde_json = "1.0.95"
+
+# env
+dotenv = "0.15.0"
+
+# jwt
+jwt-simple = "0.11.4"
+
+# rbson
+rbson = "2.0.5"
+
+# logging lib
+log = "0.4.17"
+fast_log = { version = "1.5.54" }
+
+rbatis = { version = "4.3"}
+rbdc-mysql = { version = "4.3" }
